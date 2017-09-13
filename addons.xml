@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="repository.ipcablecloud" name="IP Cable Cloud Repo" version="1.2" provider-name="IP Cable Cloud">
+	<extension point="xbmc.addon.repository" name="IP Cable Cloud Repository">
+		<info compressed="false">http://ipcablecloud.com/repo/repository/addons.xml</info>
+		<checksum>http://ipcablecloud.com/repo/repository/addons.xml.md5</checksum>
+		<datadir zip="true">http://ipcablecloud.com/repo/repository/zips</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>IP Cable Cloud Repo Repository</summary>
+		<description>U can Download and Install Official Addons of IP Cable Cloud Repo</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="plugin.program.ipcablecloudwizard" name="IP Cable Cloud" version="1.0.3" provider-name="IP Cable Cloud">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests"/>
+	<import addon="script.module.beautifulsoup4"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>program executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+		<summary lang="en">IP Cable Cloud Wizard</summary>
+		<description lang="en">Easy Install of IP Cable Cloud Builds and Addons</description>
+		<disclaimer lang="en">Note: we are not responsible or have any influence to the content and their availability from Kodi Add-ons</disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.ipcableboxguide" name="IP Cable Cloud Guide" version="1.0.4" provider-name="IP Cable Cloud">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+		<import addon="script.module.simplejson" version="3.3.0"/>
+		<import addon="script.module.requests"/>
+		<import addon="script.module.beautifulsoup4"/>
+	</requires>
+	<extension point="xbmc.python.script" library="addon.py">
+            <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="login"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">IP Cable Cloud Guide allows you to combine some of your favourite live TV plugins for use with a fully working EPG</summary>
+		<language></language>
+		<platform>all</platform>
+		<license>GPLv2</license>
+		<assets>
+          <icon>resources/icon.png</icon>
+          <fanart>resources/fanart.jpg</fanart>
+          <screenshot>resources/screenshot001.png</screenshot>
+          <screenshot>resources/screenshot002.png</screenshot>
+          <screenshot>resources/screenshot003.png</screenshot>
+        </assets>
+	</extension>
+</addon>
+
+<addon id="script.speedtestnet"
+       name="ARNU Box Speed Tester"
+       version="1.0.0"
+       provider-name="ARNU Box / Josh.5">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script"
+             library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">ARNU Box Speed Tester</summary>
+    <description lang="en">ARNU Box Speed Tester powered by speedtest.net will give you accurate Internet speed/ping test results. \n Brought to you by http://www.arnubox.com</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.fncablebandw" name="Old Movies" version="1.2.11" provider-name="IPCC">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.urlresolver" />
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary></summary>
+    <description></description>
+  </extension>
+</addon>
+
+<addon id="plugin.video.playklub"
+       name="[COLOR gold]THE PLAYERS KLUB[/COLOR]"
+       version="2.2"
+       provider-name="players">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Players Klub</summary>
+    <language>en</language>
+    <description lang="en">Players Klub - Live TV / PPV / Sports / Kids / Movies / Entertainment at an affordable price for all.</description>
+     <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.stalker" name="Papiao" version="60.0.0" provider-name="IPCC">
+    <requires>
+		<import addon="xbmc.python" version="2.14.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="server.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en"></summary>
+		<description lang="en"></description>
+		<license>GNU General Public License, v2</license>
+		<language></language>
+		<forum></forum>
+	</extension>
+</addon>
+</addons>
