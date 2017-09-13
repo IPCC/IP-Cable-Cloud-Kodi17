@@ -2,9 +2,9 @@
 <addons>
 <addon id="repository.ipcablecloud" name="IP Cable Cloud Repo" version="1.2" provider-name="IP Cable Cloud">
 	<extension point="xbmc.addon.repository" name="IP Cable Cloud Repository">
-		<info compressed="false">http://ipcablecloud.com/repo/repository/addons.xml</info>
-		<checksum>http://ipcablecloud.com/repo/repository/addons.xml.md5</checksum>
-		<datadir zip="true">http://ipcablecloud.com/repo/repository/zips</datadir>
+		<info compressed="false">http://raw.github.com/IPCC/IP-Cable-Cloud-Kodi17/master/addons.xml</info>
+		<checksum>http://raw.github.com/IPCC/IP-Cable-Cloud-Kodi17/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://raw.github.com/IPCC/IP-Cable-Cloud-Kodi17/master/zips</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>IP Cable Cloud Repo Repository</summary>
