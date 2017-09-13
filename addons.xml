@@ -30,7 +30,7 @@
 	</extension>
 </addon>
 
-<addon id="script.ipcableboxguide" name="IP Cable Cloud Guide" version="1.0.4" provider-name="IP Cable Cloud">
+<addon id="script.ipcableboxguide" name="IP Cable Cloud Guide" version="1.0.5" provider-name="IP Cable Cloud">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.module.simplejson" version="3.3.0"/>
