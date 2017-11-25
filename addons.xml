@@ -13,7 +13,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.program.ipcablecloudwizard" name="IP Cable Cloud" version="1.0.7" provider-name="IP Cable Cloud">
+<addon id="plugin.program.ipcablecloudwizard" name="IP Cable Cloud" version="2.0.0" provider-name="IP Cable Cloud">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.requests"/>
@@ -30,7 +30,7 @@
 	</extension>
 </addon>
 
-<addon id="script.ipcableboxguide" name="IP Cable Cloud Guide" version="1.1.0" provider-name="IP Cable Cloud">
+<addon id="script.ipcableboxguide" name="IP Cable Cloud Guide" version="2.0.0" provider-name="IP Cable Cloud">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.module.simplejson" version="3.3.0"/>
@@ -127,21 +127,27 @@
 	</extension>
 </addon>
 
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.247tv" name="24-7 TV" version="1.4.0" provider-name="IPCC">
+<addon id="plugin.video.VadersIPCC" name="IPCC Vader Streams" version="1.0.0" provider-name="IPCC">
   <requires>
-   <import addon="xbmc.python" version="2.19.0"/>   
-   <import addon="script.module.beautifulsoup4" /> 
-   <import addon="script.module.requests"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.addon.common"/>
+    <import addon="script.module.pyxbmct"  />
+    <import addon="script.module.requests"/>
+
   </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
+
+  <extension point="xbmc.python.pluginsource"
+            library="init.py">
         <provides>video</provides>
-  </extension>  
-  <extension point="xbmc.addon.metadata">    
-    <platform>all</platform>
-    <summary lang="en">Watch 24/7 Channels</summary>
-    <disclaimer lang="en"></disclaimer>
-    <language>en</language>
+  </extension>
+
+  <extension point="xbmc.service" library="service.py" start="login"></extension>
+  <!--<extension point="xbmc.service" library="playMonitor.py" start="login"></extension>-->
+
+
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">[COLOR red]XstreamingTV[/COLOR]</summary>
+	<description lang="en">Get all your Live Sports n Live TV here</description>
     <platform>all</platform>
   </extension>
 </addon>
